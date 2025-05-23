@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Clique sur l’Alien</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Écran d'accueil -->
+  <div id="ecran-accueil" class="ecran visible">
+    <h1>Clique sur l’Alien !</h1>
+    <img src="alien.png" alt="Alien pixelisé" class="sprite" />
+    <button id="btn-demarrer">Commencer le jeu</button>
+  </div>
+
+  <!-- Zone de jeu -->
+  <div id="jeu" class="cache"></div>
+
+  <!-- Infos affichées pendant le jeu -->
+  <div id="infos" class="cache">
+    <p><strong>Temps restant :</strong> <span id="temps">30</span> secondes</p>
+    <p><strong>Score :</strong> <span id="score">0</span></p>
+  </div>
+
+  <!-- Écran de fin -->
+  <div id="ecran-fin" class="ecran">
+    <h2>⏱️ Temps écoulé !</h2>
+    <p>Ton score final est : <span id="score-final"></span></p>
+    <button id="btn-rejouer">Rejouer</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

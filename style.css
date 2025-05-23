@@ -1,0 +1,111 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  background: #000;
+  color: white;
+}
+
+h1, h2 {
+  margin: 20px 0;
+  font-size: 2rem;
+}
+
+button {
+  padding: 12px 24px;
+  font-size: 1.4rem;
+  cursor: pointer;
+  border: none;
+  background: #0f0;
+  color: #000;
+  border-radius: 10px;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #0c0;
+}
+
+.ecran {
+  display: none;
+}
+
+.ecran.visible {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.sprite {
+  width: 80px;
+  height: 80px;
+  image-rendering: pixelated;
+  margin: 20px 0;
+}
+
+#jeu {
+  position: relative;
+  width: 100vw;
+  height: 70vh;
+  overflow: hidden;
+  background: #111;
+  border: 2px solid #444;
+}
+
+.alien {
+  width: 70px;
+  height: 70px;
+  background-image: url("alien.png");
+  background-size: cover;
+  position: absolute;
+  cursor: pointer;
+}
+
+#infos {
+  margin-top: 10px;
+  font-size: 1.6rem;
+}
+
+#score {
+  color: #00ff00;
+  font-weight: bold;
+}
+
+#temps {
+  color: #ff4444;
+  font-weight: bold;
+}
+
+.cache {
+  display: none;
+}
+
+/* 📱 Estilos para telas menores */
+@media (max-width: 600px) {
+  h1, h2 {
+    font-size: 1.6rem;
+  }
+
+  button {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+  }
+
+  .sprite {
+    width: 60px;
+    height: 60px;
+  }
+
+  #infos {
+    font-size: 1.3rem;
+  }
+
+  .alien {
+    width: 60px;
+    height: 60px;
+  }
+}
